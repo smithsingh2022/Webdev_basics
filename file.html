@@ -9,15 +9,15 @@
   <title>Node File Uploads</title>
 </head>
 <body>
-  <%- include ("./partials/messages") %>
+  <! include ("./partials/messages") >
   <div class="container">
-    <h1>File Upload</h1>
-    <%= typeof msg != 'undefined' ? msg : '' %>
+    <h1>Upload File</h1>
+    <! typeof msg != 'undefined' ? msg : '' >
     <form action="/upload" method="POST" enctype="multipart/form-data">
       <div class="file-field input-field">
         
         <div class="btn grey">
-          <span>Browse</span>
+          <span style>Browse</span>
           <input name="myFile" type="file" multiple >
         </div>
         <div class="file-path-wrapper">
